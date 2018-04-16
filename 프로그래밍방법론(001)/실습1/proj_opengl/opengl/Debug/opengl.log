@@ -1,3 +1,9 @@
 ﻿  Source.cpp
-f:\2018_spring\프로그래밍방법론(001)\실습1\proj_opengl\opengl\source.cpp(11): warning C4326: return type of 'main' should be 'int' instead of 'void'
-  opengl.vcxproj -> F:\2018_spring\프로그래밍방법론(001)\실습1\proj_opengl\opengl\Debug\opengl.exe
+e:\2018_spring\프로그래밍방법론(001)\실습1\proj_opengl\opengl\source.cpp(22): warning C4838: 'double'에서 'float'(으)로의 변환에는 축소 변환이 필요합니다.
+e:\2018_spring\프로그래밍방법론(001)\실습1\proj_opengl\opengl\source.cpp(70): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+  sphere.cpp
+e:\2018_spring\프로그래밍방법론(001)\실습1\proj_opengl\opengl\sphere.cpp(12): warning C4838: 'double'에서 'float'(으)로의 변환에는 축소 변환이 필요합니다.
+e:\2018_spring\프로그래밍방법론(001)\실습1\proj_opengl\opengl\sphere.cpp(13): warning C4838: 'double'에서 'float'(으)로의 변환에는 축소 변환이 필요합니다.
+e:\2018_spring\프로그래밍방법론(001)\실습1\proj_opengl\opengl\sphere.cpp(14): warning C4838: 'double'에서 'float'(으)로의 변환에는 축소 변환이 필요합니다.
+  코드를 생성하고 있습니다...
+  opengl.vcxproj -> E:\2018_spring\프로그래밍방법론(001)\실습1\proj_opengl\opengl\Debug\opengl.exe
