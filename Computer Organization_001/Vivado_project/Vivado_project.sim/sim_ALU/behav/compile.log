@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/2018_spring/Computer Organization_001/Vivado_project/Vivado_project.srcs/sources_1/imports/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+WARNING: [VRFC 10-1315] redeclaration of ansi port Cout is not allowed [D:/2018_spring/Computer Organization_001/Vivado_project/Vivado_project.srcs/sources_1/imports/new/ALU.v:34]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/2018_spring/Computer Organization_001/Vivado_project/Vivado_project.srcs/sim_ALU/new/ALU_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/2018_spring/Computer Organization_001/Vivado_project/Vivado_project.sim/sim_ALU/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

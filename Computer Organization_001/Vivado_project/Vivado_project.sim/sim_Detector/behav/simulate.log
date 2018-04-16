@@ -1,0 +1,4 @@
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+Passed = 128, Failed = 0
+$finish called at time : 129 ns : File "D:/2018_spring/Computer Organization_001/Vivado_project/Vivado_project.srcs/sim_Detector/010_tb.v" Line 54

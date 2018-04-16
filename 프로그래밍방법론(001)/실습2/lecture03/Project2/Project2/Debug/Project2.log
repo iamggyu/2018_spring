@@ -1,0 +1,5 @@
+﻿  Source.cpp
+d:\2018_spring\프로그래밍방법론(001)\실습2\lecture03\project2\project2\source.cpp(32): error C2652: 'Sphere': illegal copy constructor: first parameter must not be a 'Sphere'
+  d:\2018_spring\프로그래밍방법론(001)\실습2\lecture03\project2\project2\source.cpp(27): note: see declaration of 'Sphere'
+d:\2018_spring\프로그래밍방법론(001)\실습2\lecture03\project2\project2\source.cpp(32): error C2333: 'Sphere::Sphere': error in function declaration; skipping function body
+d:\2018_spring\프로그래밍방법론(001)\실습2\lecture03\project2\project2\source.cpp(40): error C2558: class 'Sphere': no copy constructor available or copy constructor is declared 'explicit'

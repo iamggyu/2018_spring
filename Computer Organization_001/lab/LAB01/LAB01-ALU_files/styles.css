@@ -1,0 +1,20 @@
+.modal-savecomment iframe { width:100%; height:450px; border:0px; }
+
+.assign-feedback-savecomment { min-height:450px; padding:0px; background-color:white;  }
+.assign-feedback-savecomment .table { margin-bottom:0px; }
+.assign-feedback-savecomment .tab-display { margin-bottom:30px; }
+.assign-feedback-savecomment .buttons { text-align:right; }
+.assign-feedback-savecomment .pagination { margin:10px; }
+
+.assign-feedback-savecomment .form-horizontal .form-group:last-child { margin-bottom:0px; }
+.assign-feedback-savecomment .form-horizontal .form-group { margin-left:0px; margin-right:0px; }
+
+.assign-feedback-savecomment .search form input { vertical-align:middle; }
+.assign-feedback-savecomment .table-bordered > thead + tbody > tr:first-child .ubsavecomment table tr td { border-top:inherit; }
+
+/* 우수과제 */
+.local_ubion_mod_assign { padding:20px; }
+.local_ubion_mod_assign .heading { margin:0px 0 20px; font-size:24px; }
+.local_ubion_mod_assign .user-picture { float:left; margin-right:5px; }
+
+.path-mod-assign .submissionaction-best .singlebutton { display:inline-block; } 

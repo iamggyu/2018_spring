@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/2018_spring/Computer Organization_001/Vivado_project/Vivado_project.srcs/sim_Detector/Detector_010.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/2018_spring/Computer Organization_001/Vivado_project/Vivado_project.srcs/sim_Detector/010_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module detector_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/2018_spring/Computer Organization_001/Vivado_project/Vivado_project.sim/sim_Detector/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

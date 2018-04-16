@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://etl.snu.ac.kr/mod/assign/view.php?id=699279 -->
+<html dir="ltr" lang="en" xml:lang="en" class="yui3-js-enabled"><div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>SNU eTL</title>
+    <link rel="shortcut icon" href="http://etl.snu.ac.kr/theme/image.php/coursemosv2/theme/1521443649/favicon">
+    
+<meta name="keywords" content="moodle, Assignment">
+<script async="" src="./SNU eTL_files/analytics.js.다운로드"></script><script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"http:\/\/etl.snu.ac.kr","sesskey":"dKuH6qBoRQ","loadingicon":"http:\/\/etl.snu.ac.kr\/theme\/image.php\/coursemosv2\/core\/1521443649\/i\/loading_small","themerev":"1521443649","slasharguments":1,"theme":"coursemosv2","jsrev":"1521443649","admin":"admin","svgicons":true};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''};if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else me.path=component+'/'+component+'.'+me.type};
+YUI_config = {"debug":false,"base":"http:\/\/etl.snu.ac.kr\/lib\/yuilib\/3.17.2\/","comboBase":"http:\/\/etl.snu.ac.kr\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"http:\/\/etl.snu.ac.kr\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"http:\/\/etl.snu.ac.kr\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"http:\/\/etl.snu.ac.kr\/theme\/yui_combo.php?m\/1521443649\/","combine":true,"comboBase":"http:\/\/etl.snu.ac.kr\/theme\/yui_combo.php?","ext":false,"root":"m\/1521443649\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-formautosubmit":{"requires":["base","event-key"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-formchangechecker":{"requires":["base","event-focus"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core_availability-form":{"requires":["base","node","event","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-calendar-info":{"requires":["base","node","event-mouseenter","event-key","overlay","moodle-calendar-info-skin"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-toolboxes":{"requires":["node","base","event-key","node","io","moodle-course-coursebase","moodle-course-util"]},"moodle-form-passwordunmask":{"requires":["node","base"]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-core_message-messenger":{"requires":["escape","handlebars","io-base","moodle-core-notification-ajaxexception","moodle-core-notification-alert","moodle-core-notification-dialogue","moodle-core-notification-exception"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-quizquestionbank":{"requires":["base","event","node","io","io-form","yui-later","moodle-question-qbankmanager","moodle-core-notification-dialogue"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-util":{"requires":["node"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-randomquestion":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-block_navigation-navigation":{"requires":["base","io-base","node","event-synthetic","event-delegate","json-parse"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_coursemosvimeo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_html-button":{"requires":["moodle-editor_atto-plugin","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"http:\/\/etl.snu.ac.kr\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"http:\/\/etl.snu.ac.kr\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1521443649\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"http:\/\/etl.snu.ac.kr\/lib\/javascript.php\/1521443649\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker"]},"mathjax":{"name":"mathjax","fullpath":"http:\/\/cdn.mathjax.org\/mathjax\/2.5-latest\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+<link rel="stylesheet" type="text/css" href="./SNU eTL_files/yui_combo.php"><script type="text/javascript" src="./SNU eTL_files/yui_combo(1).php"></script><script type="text/javascript" src="./SNU eTL_files/jquery-1.11.2.min.js.다운로드"></script>
+<script type="text/javascript" src="./SNU eTL_files/jquery-ui.min.js.다운로드"></script>
+<script type="text/javascript" src="./SNU eTL_files/bootstrap.min.js.다운로드"></script>
+<script type="text/javascript" src="./SNU eTL_files/jquery.cookie.js.다운로드"></script>
+<script type="text/javascript" src="./SNU eTL_files/jquery.validate.min.js.다운로드"></script>
+<script type="text/javascript" src="./SNU eTL_files/jquery.validate.methods.js.다운로드"></script>
+<script type="text/javascript" src="./SNU eTL_files/jquery.tableHeadFixer.js.다운로드"></script>
+<script type="text/javascript" src="./SNU eTL_files/bootstrap-datepicker.js.다운로드"></script>
+<script type="text/javascript" src="./SNU eTL_files/jquery.sortable.min.js.다운로드"></script>
+<script type="text/javascript" src="./SNU eTL_files/moment.min.js.다운로드"></script>
+<script type="text/javascript" src="./SNU eTL_files/fullcalendar.js.다운로드"></script>
+<script type="text/javascript" src="./SNU eTL_files/gcal.js.다운로드"></script>
+<script type="text/javascript" src="./SNU eTL_files/jquery.filedownload.js.다운로드"></script>
+<script type="text/javascript" src="./SNU eTL_files/timer.jquery.js.다운로드"></script>
+<script type="text/javascript" src="./SNU eTL_files/jquery.validate.en.js.다운로드"></script>
+<script type="text/javascript" src="./SNU eTL_files/jquery.mCustomScrollbar.concat.min.js.다운로드"></script>
+<script type="text/javascript" src="./SNU eTL_files/jquery.headroom.min.js.다운로드"></script>
+<script charset="utf-8" id="yui_3_17_2_2_1521640998748_4" src="./SNU eTL_files/yui_combo(2).php" async=""></script><script charset="utf-8" id="yui_3_17_2_2_1521640998748_11" src="./SNU eTL_files/yui_combo(3).php" async=""></script><link charset="utf-8" rel="stylesheet" id="yui_3_17_2_2_1521640998748_19" href="./SNU eTL_files/yui_combo(4).php"><script charset="utf-8" id="yui_3_17_2_2_1521640998748_20" src="./SNU eTL_files/yui_combo(5).php" async=""></script><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="./SNU eTL_files/all">
+<script type="text/javascript" src="./SNU eTL_files/javascript-static.js.다운로드"></script>
+<script type="text/javascript" src="./SNU eTL_files/head"></script>
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="서울대학교 교수학습개발센터">
+<meta property="og:description" content="Seoul National University, Center for Teaching and Learning">
+<meta property="og:image" content="http://ctl.snu.ac.kr/thumbnail.png">
+<meta property="og:url" content="http://ctl.snu.ac.kr">    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=0.1, user-scalable=yes, target-densitydpi=medium-dpi, minimal-ui">
+    <script type="text/javascript">
+		theme_coursemosv2.lang = 'en';
+    </script>
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="core/first" src="./SNU eTL_files/first.js.다운로드"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    config: ["Accessible.js", "Safe.js"],
+    errorSettings: { message: ["!"] },
+    skipStartupTypeset: true,
+    messageStyle: "none"
+});
+</script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jqueryprivate" src="./SNU eTL_files/jquery-private.js.다운로드"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="./SNU eTL_files/jquery-1.11.2.min.js(1).다운로드"></script></head>
+
+<body id="page-mod-assign-view" class="format-ubsweeks  path-mod path-mod-assign safari dir-ltr lang-en yui-skin-sam yui3-skin-sam etl-snu-ac-kr pagelayout-incourse course-142205 context-2124650 cmid-699279 category-5002 coursemos-layout-course page-xs has-region-side-pre empty-region-side-pre has-region-side-post empty-region-side-post content-only jsenabled">
+	<div class="skiplinks"><a class="skip" href="http://etl.snu.ac.kr/mod/assign/view.php?id=699279#maincontent">Skip to main content</a></div>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+	<div id="page" class="">
+		<div id="page-header">
+			<nav class="navbar navbar-default navbar-fixed-top headroom animated notrans slideUp">
+	<div class="container-fluid">
+		<div class="navbar-brand">
+			<a href="http://etl.snu.ac.kr/" class="logo"><span class="sr-only">CyberCampus</span></a>
+		</div>
+		
+		<div class="usermenu">
+		<ul class="nav nav-pills" role="tablist"><li class="user-info-change"></li><li class="user_department hidden-xs">KIM HYEON GYU</li><li class="user-info-menu"><a class="user-info-popover" tabindex="0" role="button" data-toggle="popover" data-placement="bottom" data-original-title="" title=""><img src="./SNU eTL_files/f2" alt="Picture of KIM HYEON GYU" class="userpicture"></a><div class="user-info-box popover-box"><div class="dropdown dropdown-lang"><a id="user-info-lang" href="http://etl.snu.ac.kr/mod/assign/view.php?id=699279#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="./SNU eTL_files/en" alt="">&nbsp;&nbsp;English (en) <span class="caret"></span> </a><ul class="dropdown-menu" aria-labelledby="user-info-lang"><li class="nochange"><div class="force_lang">This course is configured to use only this language.</div></li></ul></div><div class="user-info-picture"><img src="./SNU eTL_files/f1" alt="Picture of KIM HYEON GYU" class="userpicture"><h4>KIM HYEON GYU</h4><p class="department">전기·정보공학부</p></div><ul class="user-info-submenu clearfix"><li class="items"><a href="http://etl.snu.ac.kr/user/edit.php?id=357348">Update profile</a></li><li class="items"><a href="http://etl.snu.ac.kr/login/logout.php?sesskey=dKuH6qBoRQ">Log out</a></li></ul><ul class="user-info-shortcut"><li><a href="http://etl.snu.ac.kr/user/files.php">Manage file</a></li><li><a href="http://etl.snu.ac.kr/mod/assign/view.php?id=699279#" class="usersync" data-confirm="학사 연동을 진행하시겠습니까?
+- 수강 정보 반영
+  * 전산 신청 시 - 수강 정보 정정 후 24시간 후 반영
+  * 초안지 신청 시 - 개설학과에서 수강 정정 기간 마지막일 일괄 등록 후 
+     24시간 후 반영 (해당 학과 문의)
+
+- 개인 정보 반영
+  * my snu 수정 후 10분 후 반영"><span class="text-primary">Sync profile changes</span></a></li></ul></div></li><li class="user-courses"><a class="user-courses-popover icon-a" tabindex="0" role="button" data-toggle="popover" data-placement="bottom" data-original-title="" title=""><div class="icon icon-my"></div></a><div class="user-courses-box popover-box"><div class="popover-header">My Course (0)</div><ul class="my-course-lists"><li class="nocourses">Loading...</li></ul><div class="popover-footer"><a href="http://etl.snu.ac.kr/">MY COURSES</a></div></div></li><li class="user-notification"><a class="icon-a user-noti-popover" tabindex="0" role="button" data-toggle="popover" data-placement="bottom" data-original-title="" title=""><div class="icon icon-noti"></div></a><div class="user-noti-box popover-box"><div class="popover-header"><span>All Notifications</span> <img src="./SNU eTL_files/popover-icon" alt="" class="gear"></div><div class="user-noti-lists"><div class="nomessage">Loading...</div></div><div class="popover-footer"><a href="http://etl.snu.ac.kr/local/ubnotification/">View all</a></div></div></li><li class="user-message"><a class="icon-a user-message-popover" tabindex="0" role="button" data-toggle="popover" data-placement="bottom" data-original-title="" title=""><div class="icon icon-msg"></div></a><div class="user-message-box popover-box"><div class="popover-header">Message <img src="./SNU eTL_files/popover-icon" alt="" class="gear"></div><div class="user-message-lists"><div class="nomessage">Loading...</div></div><div class="popover-footer"><a href="http://etl.snu.ac.kr/mod/assign/view.php?id=699279#" class="btn-allread-message">Read all messages.</a><span class="popover-bar">&nbsp;</span><a href="http://etl.snu.ac.kr/local/ubmessage/">View All</a></div></div></li><li class="user-product"><a class="user-menu-product icon-a" tabindex="0" role="button" data-toggle="popover" data-original-title="" title=""><div class="icon icon-menu"></div></a><div class="hide menu-product"><div class="menu-product-itl"><h5>CTL 안내 <a href="http://ctl.snu.ac.kr/" target="_blank"><img src="./SNU eTL_files/itl_home" alt=""></a></h5><ul><li><a href="http://sugang.snu.ac.kr/search.html" target="_blank">수강편람</a></li><li><a href="http://www.snu.ac.kr/certificate/request" target="_blank">증명서 발급</a></li><li><a href="http://www.snu.ac.kr/academic-calendar" target="_blank">학사일정</a></li><li><a href="http://www.snu.ac.kr/leave-of-absence" target="_blank">학사행정</a></li></ul></div><div class="menu-product-product"><div class="container-fluid"><div class="row"><div class="col-xs-6"><a href="http://ctl.snu.ac.kr/" target="_blank"><span class="mpp mpp-5"></span>교환학생 프로그램</a></div><div class="col-xs-6"><a href="http://snui.snu.ac.kr/" target="_blank"><span class="mpp mpp-3"></span>평생교육원</a></div></div></div></div><div class="menu-product-family"><h5>학교 서비스</h5><div class="container-fluid"><div class="row"><div class="col-xs-5"><a href="http://library.snu.ac.kr/" target="_blank">도서관</a></div><div class="col-xs-7"><a href="http://ist.snu.ac.kr/ist/main/index.jsp" target="_blank">정보화본부</a></div><div class="col-xs-5"><a href="http://my.snu.ac.kr/mysnu" target="_blank">mySNU </a></div><div class="col-xs-7"><a href="http://www.snu.ac.kr/index.html" target="_blank">SNU</a></div></div></div></div></div></li><li class="active user-login user-logout hidden-xs"><a href="http://etl.snu.ac.kr/login/logout.php?sesskey=dKuH6qBoRQ" class="btn btn-person">Log out</a></li></ul>		</div>
+		
+		<div class="coursename"><h1><a href="http://etl.snu.ac.kr/course/view.php?id=142205">Computer Organization (001)</a></h1></div>	</div>
+</nav>		</div>
+		
+		<div id="page-lnb">
+			<ul class="left-menus">
+	<li class="" data-original-title="" title=""><a href="http://etl.snu.ac.kr/" class="left-menu-link left-menu-link-mypage" title="My Page" data-toggle="tooltip" data-placement="right"><h5 class="">My Page</h5></a><ul><li class=""><a href="http://etl.snu.ac.kr/" title="">Dashboard</a></li><li class=""><a href="http://etl.snu.ac.kr/user/files.php" title="">Manage file</a></li><li class=""><a href="http://etl.snu.ac.kr/mod/ubboard/my.php" title="">Posts in progress</a></li><li class=""><a href="http://etl.snu.ac.kr/user/edit.php?id=357348" title="">Update profile</a></li></ul></li><li class="" data-original-title="" title=""><a href="http://etl.snu.ac.kr/" class="left-menu-link left-menu-link-mycourses" title="Curriculum" data-toggle="tooltip" data-placement="right"><h5 class="">Curriculum</h5></a><ul><li class=""><a href="http://etl.snu.ac.kr/local/ubion/user/" title="">My Courses</a></li><li class=""><a href="http://etl.snu.ac.kr/local/ubassistant/" title="">Assistant/Auditor Request</a></li></ul></li><li class="" data-original-title="" title=""><a href="http://etl.snu.ac.kr/local/ubassistant/irregular.php" class="left-menu-link left-menu-link-irrcourse" title="Non-curriculum" data-toggle="tooltip" data-placement="right"><h5 class="nosubmenu">Non-curriculum</h5></a></li><li class="" data-original-title="" title=""><a href="http://etl.snu.ac.kr/local/ubonline/" class="left-menu-link left-menu-link-online" title="SNUON" data-toggle="tooltip" data-placement="right"><h5 class="">SNUON</h5></a><ul><li class=""><a href="http://etl.snu.ac.kr/local/ubonline/index.php" title="">Lecture List</a></li><li class=""><a href="http://etl.snu.ac.kr/local/ubonline/open_course_list.php" title="">Open Lecture</a></li><li class=""><a href="http://etl.snu.ac.kr/local/ubonline/my.php" title="">My SNUON</a></li><li class=""><a href="http://etl.snu.ac.kr/local/ubonline/intro.php" title="">How to create</a></li></ul></li><li class="" data-original-title="" title=""><a href="http://etl.snu.ac.kr/local/ubeclass/my.php" class="left-menu-link left-menu-link-eclass" title="e-Class" data-toggle="tooltip" data-placement="right"><h5 class="nosubmenu">e-Class</h5></a></li><li class="" data-original-title="" title=""><a href="http://etl.snu.ac.kr/mod/ubboard/view.php?id=23408" class="left-menu-link left-menu-link-guide" title="Guide" data-toggle="tooltip" data-placement="right"><h5 class="">Guide</h5></a><ul><li class=""><a href="http://etl.snu.ac.kr/mod/ubboard/view.php?id=23408" title="">Announcements</a></li><li class=""><a href="http://etl.snu.ac.kr/mod/ubboard/view.php?id=23410" title="">Q&amp;A</a></li><li class=""><a href="http://etl.snu.ac.kr/mod/ubboard/view.php?id=23409" title="">FAQ</a></li><li class=""><a href="http://etl.snu.ac.kr/mod/ubboard/view.php?id=23516" title="">BugCrash</a></li><li class=""><a href="http://etl.snu.ac.kr/local/ubion/manual/" title="">Manual</a></li><li class=""><a href="http://etl.snu.ac.kr/html/help.php" title="">Help Request</a></li><div class="itl_info"><h5>Call us</h5><div class="itl_desc"><p class="tell">02-880-8282</p><p class="name">Seoul National University</p></div></div></ul></li></ul>
+
+<ul class="left-menus left-banner active">
+<li data-original-title="" title=""><a href="http://board.snu.ac.kr/enboard/snu_study/?langKnd=en" target="_blank"><div class="itl_info"><div class="itl_study"><p class="name_study">Study Recruit</p></div></div></a></li><li data-original-title="" title=""><a href="http://etlapp-new.snu.ac.kr:8080/Teaser/konan/teaser/uploadReport.jsp" target="_blank"><div class="itl_info"><div class="itl_desc"><p class="name1">Plagiarism</p><p class="name">Preview</p></div></div></a></li></ul>		</div>
+		<div id="page-mask">
+						<div id="page-container" class="">
+				<div id="page-submenu">
+	<div id="coursemos-course-menu">
+		<ul class="course-menus">
+			<li>
+	<div class="block block-coursemos block-coursehome " data-name="coursehome">
+		<div class="header">
+			<div class="block_action">
+				<img class="block-hider-hide" alt="Hide block" src="./SNU eTL_files/switch_minus" title="Hide block">
+				<img class="block-hider-show" alt="Show block" src="./SNU eTL_files/switch_plus" title="Show block">
+			</div>
+			<h2><a href="http://etl.snu.ac.kr/course/view.php?id=142205">Course Home</a></h2>
+		</div>
+		<div class="content">
+						<ul class="topmenu">
+				<li class="expand"><a href="http://etl.snu.ac.kr/mod/assign/view.php?id=699279#" title="Course Info" class="">Course Info <span class="caret"></span></a><ul><li><a href="http://sugang.snu.ac.kr/sugang/cc/cc103.action?openSchyy=2018&amp;openShtmFg=U000200001&amp;openDetaShtmFg=U000300001&amp;sbjtCd=430.322&amp;ltNo=001&amp;lang=eng" title="Syllabus" class="submenu-syllabus " target="_blank">Syllabus</a></li><li><a href="http://etl.snu.ac.kr/user/users.php?id=142205" title="Participants list" class="submenu-users ">Participants list</a></li></ul></li><li class="expand"><a href="http://etl.snu.ac.kr/mod/assign/view.php?id=699279#" title="Grade/Attendance" class="">Grade/Attendance <span class="caret"></span></a><ul><li><a href="http://etl.snu.ac.kr/report/ubcompletion/progress.php?id=142205" title="Progress status" class="submenu-progress ">Progress status</a></li><li><a href="http://etl.snu.ac.kr/local/ubattendance/index.php?id=142205" title="Offline-Attendance" class="submenu-attendance ">Offline-Attendance</a></li><li><a href="http://etl.snu.ac.kr/grade/report/user/index.php?id=142205" title="Grades" class="submenu-grade ">Grades</a></li></ul></li><li class=""><a href="http://etl.snu.ac.kr/mod/assign/view.php?id=699279#" title="Students Notifications" class="">Students Notifications <span class="caret"></span></a><ul><li><a href="http://etl.snu.ac.kr/local/ubmessage/send.php?id=142205" title="Sending Message" class="submenu-message ">Sending Message</a></li></ul></li><li class=""><a href="http://etl.snu.ac.kr/mod/assign/view.php?id=699279#" title="Others" class="">Others <span class="caret"></span></a><ul><li><a href="http://etl.snu.ac.kr/local/ubcommunication/group/user_group.php?id=142205" title="Group members" class="submenu-group_member ">Group members</a></li></ul></li>			</ul>
+			
+					</div>
+	</div>
+</li>
+	<li>
+		<div class="block block-coursemos block-quick-mod  hidden" data-name="quick-mod">
+			<div class="header">
+				<div class="block_action">
+					<img class="block-hider-hide" alt="Hide block" src="./SNU eTL_files/switch_minus" title="Hide block">
+					<img class="block-hider-show" alt="Show block" src="./SNU eTL_files/switch_plus" title="Show block">
+				</div>
+				<h2>Activities/Resources</h2>
+			</div>
+			<div class="content">
+				<ul class="add_activities">
+					<li><img src="./SNU eTL_files/icon" alt="" class="moduleicon"> <a href="http://etl.snu.ac.kr/mod/label/index.php?id=142205">Label</a></li><li><img src="./SNU eTL_files/icon(1)" alt="" class="moduleicon"> <a href="http://etl.snu.ac.kr/mod/assign/index.php?id=142205">Assignment</a></li><li><img src="./SNU eTL_files/icon(2)" alt="" class="moduleicon"> <a href="http://etl.snu.ac.kr/mod/ubfile/index.php?id=142205">File</a></li><li><img src="./SNU eTL_files/icon(3)" alt="" class="moduleicon"> <a href="http://etl.snu.ac.kr/mod/ubboard/index.php?id=142205">Board</a></li>				</ul>
+							</div>
+		</div>
+	</li>
+			</ul>
+		<aside id="block-region-side-pre" class="block-region" data-blockregion="side-pre" data-droptarget="1"></aside>        <aside id="block-region-side-post" class="block-region" data-blockregion="side-post" data-droptarget="1"></aside>	</div>
+	
+</div>
+				
+				
+				<div id="page-content" class="clearfix">
+					<div id="page-content-wrap">
+						<div class="page-content-navigation"><ol class="breadcrumb"><li class="breadcrumb-home"><a href="http://etl.snu.ac.kr/"><img src="./SNU eTL_files/course-home" alt="HOME"></a></li><li><a title="Computer Organization" href="http://etl.snu.ac.kr/course/view.php?id=142205">Computer Organization (2018년도, 1학기, 430.322_001)</a></li><li><a title="Assignment" href="http://etl.snu.ac.kr/mod/assign/view.php?id=699279">[LAB 2] RTL and Sequential Logic [Edited: 2018.03.21]</a></li></ol></div>						<div id="region-main">
+							<div role="main" id="yui_3_17_2_2_1521640998748_28"><span id="maincontent"></span><h2>[LAB 2] RTL and Sequential Logic [Edited: 2018.03.21]</h2><div id="intro" class="box generalbox boxaligncenter"><div class="no-overflow"><p></p><p align="left" style="margin-top:6.0pt;margin-right:0cm;
+margin-bottom:19.5pt;margin-left:0cm;text-align:left;line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><i><span lang="EN-US" style="font-size: 10.5pt;">Pyeongsu Park (</span></i><span lang="EN-US"><a href="mailto:pyeongsu@snu.ac.kr"><i><span style="font-size:10.5pt">pyeongsu@snu.ac.kr</span></i></a></span><i><span lang="EN-US" style="font-size: 10.5pt;">)</span></i><br></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><i><span lang="EN-US" style="font-size:10.5pt;color:#333333">Eunjin Baek (ebaek@snu.ac.kr)</span></i></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><b><span lang="EN-US" style="font-size:10.5pt;color:#333333"><br></span></b></p><p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><b><span lang="EN-US" style="font-size:10.5pt;color:#333333"><br></span></b></p><p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><b><span lang="EN-US" style="font-size:10.5pt;color:#333333">[Notice]</span></b></p><p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><b><span lang="EN-US" style="font-size:10.5pt;color:#333333">2018.03.21: Reads should be asynchronous for the later projects, so we change the guideline (marked as underline) for the RF implementation. We do not grade asyncrhonous read in the testbench. However, you need to change the code in the later project if you design the RF as synchronous read.<br>
+<!--[if !supportLineBreakNewLine]--><br>
+<!--[endif]--></span></b><span lang="EN-US" style="font-size:10.5pt;color:#333333"></span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><b><span lang="EN-US" style="font-size:10.5pt;color:#333333">Overview</span></b><b><span lang="EN-US" style="font-size:10.5pt;color:#333333"></span></b></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333">The purpose of this project is to understand (1) what is register transfer level (RTL) and (2) how to design a sequential logic in Verilog.<br>The assignment covers them by implementing a "010 detector" and a "register file".</span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><b><span lang="EN-US" style="font-size:10.5pt;color:#333333"><br>
+<!--[if !supportLineBreakNewLine]--><br>
+<!--[endif]--></span></b><span lang="EN-US" style="font-size:10.5pt;color:#333333"></span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><b><span lang="EN-US" style="font-size:10.5pt;color:#333333">Goal</span></b><span lang="EN-US" style="font-size:10.5pt;color:#333333"></span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333">- Understand what is register transfer level (RTL) in Verilog<br>- Learn how to design sequential logic in Verilog</span></p><p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333"><br></span></p><p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333"><br></span></p><p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333"><b>Assignment Overview</b></span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333">The assignment for this week is <span style="color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, 돋움, dotum, 굴림, gulim, &quot;맑은 고딕&quot;, arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(247, 249, 250); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">to design and implement&nbsp;</span>(1) a 010 detector and (2) a synchronized 2-read 1-write register file.</span></p><p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span style="font-size: 10.5pt;">Through this assignment, you can learn how to write down your sequential logic&nbsp;in Verilog, and i<span style="color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, 돋움, dotum, 굴림, gulim, &quot;맑은 고딕&quot;, arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(247, 249, 250); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">t is a fundamental step for your successful CPU prototyping.</span></span></p><p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333"><span style="color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, 돋움, dotum, 굴림, gulim, &quot;맑은 고딕&quot;, arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(247, 249, 250); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">If you don't know how to start,&nbsp;</span>refer to the material for this week; It contains how to design an FSM and a synchronous&nbsp;circuit.<br>&nbsp;</span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333">&nbsp;</span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><b><span lang="EN-US" style="font-size:10.5pt;color:#333333">Assignment 2-1: 010 detector</span></b><span lang="EN-US" style="font-size:10.5pt;color:#333333"></span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333">The input of the sequence detector is a binary stream, which consists of only 1 and 0.<br>The sequence detector's output is 1 when the recent three bits are "010".</span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333">Below is the example of 101 detector's input and output.</span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333">Input:&nbsp;&nbsp; 0000001010111001101<br>Output: 0000000101000000000</span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333;background:white">One bit per cycle is given as input, and output, which is 1 bit, should be changed before the next clock positive edge.</span><span lang="EN-US" style="font-size:10.5pt;color:#333333"></span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333">Of course, 1-bit clock is also an input of the detector.</span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333">* You should draw your FSM diagram on your report *</span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333">&nbsp;</span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333">&nbsp;</span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><b><span lang="EN-US" style="font-size:10.5pt;color:#333333">Assignment 2-2: Register File</span></b><span lang="EN-US" style="font-size:10.5pt;color:#333333"></span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333">A register file is a fundamental building block of a CPU.<br>Simply speaking, a register file is a collection of registers, which saves temporal values and program contexts.<br>There are many design choices for register files, but we decided to give a simple one as an assignment: a 2-port-read and 1-port-write register file.</span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333">&nbsp;</span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333">Below is the block diagram of our register file.</span></p><p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333"><br>Its inputs consist of (1) 1-bit write signal, (2) 1-bit clock, (3) three 2-bit addresses (two for reads and one for write), and (4) a 16-bit data that will be written to the register specified by address<sub>3.&nbsp;</sub></span><span style="font-size: 10.5pt;">(5) and reset_n;</span></p><p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333">As outputs, the RF generates two 16-bit data specified by two read addresses.<br>
+<br>The Data1 is for Addr1, Data2 is for Addr2, and Data3 is for Addr3.<br>In other words, Data1 is from the register specified by Addr1,&nbsp;Data2 is from the register specified by Addr2,&nbsp;and Data3 is written to the register specified by Addr3.<br>&nbsp;</span></p><p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span style="font-size: 10.5pt;">When the reset_n is </span><u style="font-size: 10.5pt;"><b>low</b></u><span style="font-size: 10.5pt;">, all the register values set to 0.</span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333">If the write signal is enabled, or 1, the Data3 should be written at the <u><b>next positive clock edge</b></u>.<br>In other words, the write should be synchronized to the clock.</span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333"><br>For example<span style="background:white">, if the "write" is initially turned on and becomes off before the positive clock edge, then the data should not be written.</span><br>
+<span style="background:white">If the "write" is turned off, of course, then there should be no write.</span><br>
+<span style="background:white"><u>However, reads should be asynchronous to the clock; data1 and data2 should be changed immediately when the addr1 and addr2 are changed.</u></span></span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333">&nbsp;</span></p><p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span style="background-color: white; font-size: 10.5pt;">You need to use the smallest number of registers for 2-bit addresses in this assignment. </span><b style="font-size: 10.5pt;">If not, you lose some points</b><span style="background-color: white; font-size: 10.5pt;">.</span></p><p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333;background:white">You don't have to set the initial values of registers.</span><span lang="EN-US" style="font-size:10.5pt;color:#333333"></span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333;background:white">There should be no errors in your RF because you need to</span><span lang="EN-US" style="font-size:10.5pt;color:#333333">&nbsp;use this register file for the single cycle CPU.</span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333"><br><img src="./SNU eTL_files/rf.png" alt="" width="301" height="219" role="presentation" style="vertical-align:text-bottom; margin: 0 .5em;" class="img-responsive"><br>&nbsp;</span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333">&nbsp;</span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><b><span lang="EN-US" style="font-size:10.5pt;color:#333333">Grading</span></b><span lang="EN-US" style="font-size:10.5pt;color:#333333"></span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><b><span lang="EN-US" style="font-size:10.5pt;color:#333333">Design: 010 detector</span></b><span lang="EN-US" style="font-size:10.5pt;color:#333333"></span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333">You need to design your 010-detector with an FSM. Your code should be written based on the FSM you drew in the report.</span></p><p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333">If there is a mismatch, then you cannot get a full credit.</span></p><p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333"><br></span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><b><span lang="EN-US" style="font-size:10.5pt;color:#333333">Functionality: correct results on our testbench</span></b><span lang="EN-US" style="font-size:
+10.5pt;color:#333333"></span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333">In this week, we give a sample testbench that has simple patterns for the detector and RF. However, we may change the patterns for the grading.</span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333">We recommend testing your code for various patterns (make your own!).</span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333">It is better if your testbench covers lots of possible cases.&nbsp;<br>
+<br>We will grade your source codes with our own testbench that covers numerous situations.<br>You should remember that RF's write is synchronized to the clock, as mentioned above.<br>&nbsp;</span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><b><span lang="EN-US" style="font-size:10.5pt;color:#333333">Code review</span></b><span lang="EN-US" style="font-size:10.5pt;color:#333333"></span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333">Your code should be easy to read. If not, you may get some penalties.</span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333">- You should provide the explanations of module's inputs, outputs, and functionality.<br>- All the variables, parameters, and file names should be self-explanatory. It should be neither "reg a", "wire wire1" nor "helloWorld.v".<br>- You stick to use a consistent code style.&nbsp;</span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333">- Do not mix blocking and non-blocking assignment in a single always block.</span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333">- Do not use delay (e.g., #10) to correct the timing. Delays are only for testing.</span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><b><span lang="EN-US" style="font-size:10.5pt;color:#333333"><br></span></b></p><p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><b><span lang="EN-US" style="font-size:10.5pt;color:#333333">Report</span></b><span lang="EN-US" style="font-size:10.5pt;color:#333333"></span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333">Please refer to&nbsp;<b>"Lab1_How_to_wirte_your_report.pdf".<br>
+</b>I'll follow the previous guideline for this week.&nbsp;<br>In addition to this, you should explain how you designed 010-detector with a clear FSM.</span></p><p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333"><br></span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><b><span lang="EN-US" style="font-size:10.5pt;color:#333333">Submission</span></b><span lang="EN-US" style="font-size:10.5pt;color:#333333"></span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><b><span lang="EN-US" style="font-size:10.5pt;color:#333333">Due: Tue March 27 5:00 pm</span></b><span lang="EN-US" style="font-size:10.5pt;color:#333333"><br>-10% per day penalty for late submissions until Tue April 3<sup>rd</sup> 5:00 pm<br>- 0&nbsp;point&nbsp;after Tue April 3<sup>rd</sup> 5:00 pm</span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><b><span lang="EN-US" style="font-size:10.5pt;color:#333333">Upload a single zip file containing your (1) source code and (2) report on the eTL&nbsp;board.</span></b><span lang="EN-US" style="font-size:10.5pt;color:#333333"></span></p><p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><b><span lang="EN-US" style="font-size:10.5pt;color:#333333"><br></span></b></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><b><span lang="EN-US" style="font-size:10.5pt;color:#333333">Teaching assistants</span></b><span lang="EN-US" style="font-size:10.5pt;color:#333333"></span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333">If you have any questions about this assignment, lectures, and homework, make an appointment or send us an email.&nbsp;</span></p>
+
+<p align="left" style="margin-bottom:7.5pt;text-align:left;
+line-height:normal;background:#F7F9FA;text-autospace:
+ideograph-numeric ideograph-other;word-break:keep-all"><span lang="EN-US" style="font-size:10.5pt;color:#333333">Office: 851-4 B301)</span></p>
+
+<p style="margin-top:8.0pt;margin-right:0cm;margin-bottom:9.0pt;
+margin-left:0cm"><span lang="EN-US" style="font-size:10.5pt;line-height:107%;color:#333333">TAs (</span><span lang="EN-US"><a href="mailto:ece322-ta@hpcs.snu.ac.kr"><span style="font-size:
+10.5pt;line-height:107%;color:#1155CC">ece322-ta@hpcs.snu.ac.kr</span></a></span><span lang="EN-US" style="font-size:10.5pt;line-height:107%;color:#333333">)</span></p>
+
+<p style="margin-top:8.0pt;margin-right:0cm;margin-bottom:9.0pt;
+margin-left:0cm"><span lang="EN-US" style="font-size:10.5pt;line-height:107%;color:#333333">Pyeongsu Park (pyeongsu@snu.ac.kr) </span></p>
+
+<p style="margin-top:8.0pt;margin-right:0cm;margin-bottom:9.0pt;
+margin-left:0cm"><span lang="EN-US" style="font-size:10.5pt;line-height:107%;color:#333333">Eunjin Baek (ebaek@snu.ac.kr) </span></p>
+
+<p style="margin-top:8.0pt;margin-right:0cm;margin-bottom:9.0pt;
+margin-left:0cm"><span lang="EN-US" style="font-size:10.5pt;line-height:107%;color:#333333">Suheon Bae (sheon.bae@snu.ac.kr) </span></p>
+
+<p style="margin-top:8.0pt;margin-right:0cm;margin-bottom:9.0pt;
+margin-left:0cm"><span lang="EN-US" style="font-size:10.5pt;line-height:107%;color:#333333">Hunjun Lee (hunjunlee7515@snu.ac.kr)</span></p><br><p></p></div></div><div class="submissionstatustable"><h3>Submission status</h3><div class="box boxaligncenter submissionsummarytable"><table class="generaltable table table-bordered">
+<tbody><tr class="">
+<td class="cell c0" style="">Submission status</td>
+<td class="cell c1 lastcol" style="">No attempt</td>
+</tr>
+<tr class="">
+<td class="cell c0" style="">Grading status</td>
+<td class="submissionnotgraded cell c1 lastcol" style="">Not graded</td>
+</tr>
+<tr class="">
+<td class="cell c0" style="">Due date</td>
+<td class="cell c1 lastcol" style="">2018-03-27 17:00</td>
+</tr>
+<tr class="">
+<td class="cell c0" style="">Time remaining</td>
+<td class="cell c1 lastcol" style="">5 days 17 hours</td>
+</tr>
+<tr class="lastrow">
+<td class="cell c0" style="">Last modified</td>
+<td class="cell c1 lastcol" style="">-</td>
+</tr>
+</tbody>
+</table>
+</div><link href="./SNU eTL_files/styles.css" type="text/css" rel="stylesheet"><div class="box generalbox submissionaction submissionaction-best"><div class="singlebutton"><form method="get" action="http://etl.snu.ac.kr/mod/assign/view.php"><div><input type="submit" value="Add submission" class="btn btn-default form-submit"><input type="hidden" name="id" value="699279"><input type="hidden" name="action" value="editsubmission"></div></form></div></div></div><div class="feedback"><h3>Feedback</h3><div class="box boxaligncenter feedbacktable"><table class="generaltable table table-bordered">
+<tbody><tr class="lastrow">
+<td class="cell c0" style="">overall similarity</td>
+<td class="cell c1 lastcol" style=""><div class="box boxaligncenter plugincontentsummary summary_assignfeedback_memechecker_492500"><div class="copyratio"></div></div></td>
+</tr>
+</tbody>
+</table>
+</div></div></div>				            
+			            </div>
+		            </div>
+				</div>
+								<div class="coursemos-course-menu-expand" style="top: 1140px;">
+					<button type="button" class="nobtn btn-course-menu btn-course-menu-open"></button>
+					<button type="button" class="nobtn btn-course-menu btn-course-menu-close"></button>
+				</div>
+							</div>
+		</div>
+		
+		<div id="page-footer">
+			<ul class="footer-menus pull-left">
+		<li><a href="http://etl.snu.ac.kr/local/ubion/user/first.php" class="private_1">Privacy Policy</a></li> 	
+	<li><a href="http://etl.snu.ac.kr/html/email/email.php" class="private_1">Prohibition of Unauthorized Collection of E-mail Addresses</a></li>
+</ul>
+<!-- 
+<div class="helpdesk">
+	<a href="#" class="nobtn">도움말</a>
+</div>
+ -->
+<div class="address">
+	1 Gwanak-ro, Gwanak-gu, Seoul 08826 <span class="tell">Tel : +82-2-880-8282</span> <br>
+	<span class="copyright">
+			</span>
+</div>
+<div id="back-top" style="bottom: 10px; display: block;">
+	<a href="http://etl.snu.ac.kr/mod/assign/view.php?id=699279#top"><span></span></a>
+</div>
+<div id="ajax_loading_submit">&nbsp;</div>
+<div id="ajax_loading_container">
+	<div id="ajax_loading_submit_img">
+		<img src="./SNU eTL_files/ajax-loader" alt="loading..."> Loading...
+	</div>
+	<div id="ajax_loading_message">
+		<p class="save_msg">Data is saved. Please wait.</p>
+		<p class="refresh_msg">Long period of time, if refresh(F5) while loading page please.</p>
+	</div>
+</div>	
+		</div>
+	</div>
+	
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-38985636-35', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script type="text/javascript" src="./SNU eTL_files/flexiblepage.js.다운로드"></script><script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'http://etl.snu.ac.kr/lib/requirejs.php/1521443649/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+
+    paths: {
+        jquery: 'http://etl.snu.ac.kr/lib/javascript.php/1521443649/lib/jquery/jquery-1.11.2.min',
+        jqueryui: 'http://etl.snu.ac.kr/lib/javascript.php/1521443649/lib/jquery/ui-1.11.4/jquery-ui.min',
+        jqueryprivate: 'http://etl.snu.ac.kr/lib/javascript.php/1521443649/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="./SNU eTL_files/require.min.js.다운로드"></script>
+<script type="text/javascript">
+//<![CDATA[
+require(['core/first'], function() {
+;
+require(["core/log"], function(amd) { amd.setConfig({"level":"warn"}); });
+});
+//]]>
+</script>
+<script type="text/javascript" src="./SNU eTL_files/footer"></script>
+<script type="text/javascript" src="./SNU eTL_files/assign.js.다운로드"></script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","morehelp":"More help","loadinghelp":"Loading...","cancel":"Cancel","yes":"Yes","confirm":"Confirm","no":"No","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} alias\/shortcut files that use this file as their source","select":"Select"},"admin":{"confirmation":"Confirmation"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+YUI().use('node', function(Y) {
+M.util.load_flowplayer();
+setTimeout("fix_column_widths()", 20);
+Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"en"});
+});
+Y.use("moodle-block_navigation-navigation",function() {M.block_navigation.init_add_tree({"id":"5","instance":"5","candock":false});
+});
+M.util.help_popups.setup(Y);
+Y.use("moodle-core-popuphelp",function() {M.core.init_popuphelp();
+});
+M.local_ubion_assign.best_view(Y, "699279");
+ M.util.js_pending('random5ab26623d93a73'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random5ab26623d93a73'); });
+
+});
+//]]>
+</script>
+
+
+</body></html>
