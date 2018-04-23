@@ -1,5 +1,5 @@
-#pragma once
 
+#pragma once
 #include <GL/glut.h>
 
 class Light {

@@ -1,5 +1,5 @@
 /* Implement: Define each function of Light class */
-#include"Light.h"
+#include "Light.h"
 
 Light::Light() {
 	lightID = 0;
@@ -34,6 +34,13 @@ Light::Light(const Light& Lt) {
 	}
 }
 
+Light::~Light() {
+	delete[] center_pos;
+	delete[] ambient;
+	delete[] diffuse;
+	delete[] specular;
+}
+
 void Light::setAmbient(float r, float g, float b, float a) {
 	ambient[0] = r;
 	ambient[1] = g;
@@ -56,8 +63,10 @@ void Light::setSpecular(float r, float g, float b, float a) {
 }
 
 void Light::draw() const {
-	glLightfv(lightID, GL_AMBIENT, ambient);
-	glLightfv(lightID, GL_DIFFUSE, diffuse);
-	glLightfv(lightID, GL_SPECULAR, specular);
-	glLightfv(lightID, GL_POSITION, center_pos);
+	float light_position[] = { center_pos[0], center_pos[1], center_pos[2], 1.0 };
+	glLightfv(GL_LIGHT0 + lightID, GL_AMBIENT, ambient);
+	glLightfv(GL_LIGHT0 + lightID, GL_DIFFUSE, diffuse);
+	glLightfv(GL_LIGHT0 + lightID, GL_SPECULAR, specular);
+	glLightfv(GL_LIGHT0 + lightID, GL_POSITION, light_position);
+	glEnable(GL_LIGHT0 + lightID);
 }

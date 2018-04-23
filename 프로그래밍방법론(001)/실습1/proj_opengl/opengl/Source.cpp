@@ -1,6 +1,7 @@
 /* Implement: Include header files */
+
 #include <vector>
-#include "sphere.h"
+#include "Sphere.h"
 #include "Teapot.h"
 #include "Light.h"
 
@@ -17,15 +18,22 @@ float angle = 0;
 void init() {
 	glEnable(GL_LIGHTING);
 	glEnable(GL_DEPTH_TEST);
-
+	
 	/* Implement: Set light properties */
-	lights.push_back(Light());
-	lights.push_back(Light());
+	lights.push_back(Light(0, 100, 100, 0));
+	lights.push_back(Light(200, 0, 0, 1));
+	lights[0].setAmbient(0.1, 0.1, 0.1, 1.0);
+	lights[0].setDiffuse(0.3, 0.3, 0.3, 1.0);
+	lights[0].setSpecular(1.0, 1.0, 1.0, 1.0);
+	lights[1].setAmbient(0.5, 0.5, 0.5, 1.0);
+	lights[1].setDiffuse(0.5, 0.5, 0.5, 1.0);
+	lights[1].setSpecular(1.0, 1.0, 1.0, 1.0);
 }
 
 void idle() {
 	/* Implement: Change the rotation angle */
-	angle += 0.1;
+	angle += 0.5;
+	glutPostRedisplay();
 }
 
 void renderScene() {
@@ -47,11 +55,17 @@ void renderScene() {
 		0.0f, 1.0f, 0.0f);
 
 	/* Implement: draw each object */
+	lights[0].draw();
+	sphere.draw();
+	teapot.draw();
+	glRotatef(angle, 0.0f, 1.0f, 0.0f);
+	lights[1].draw();
 
 	glutSwapBuffers();
 }
 
 void main(int argc, char **argv) {
+	
 	// init GLUT and create Window
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DEPTH | GLUT_DOUBLE | GLUT_RGBA);
