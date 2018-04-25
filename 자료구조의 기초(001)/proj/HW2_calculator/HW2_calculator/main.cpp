@@ -20,5 +20,17 @@ int main() {
 	cout << calc.getPostfixExp() << endl;
 	cout << calc.calculate() << endl << endl;
 
+	str = "(((((((((3)+2)-4)*0)-2)/1)/5)-0)+7)";
+	calc.setInfixExp(str);
+	cout << "infix: " << str << endl;
+	cout << calc.getPostfixExp() << endl;
+	cout << calc.calculate() << endl << endl;
+	
+	str = "1*((2*3)*4*5)*6*7";
+	calc.setInfixExp(str);
+	cout << "infix: " << str << endl;
+	cout << calc.getPostfixExp() << endl;
+	cout << calc.calculate() << endl << endl;
+
 	system("pause");
 }
