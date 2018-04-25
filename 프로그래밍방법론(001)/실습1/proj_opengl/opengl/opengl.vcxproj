@@ -19,11 +19,15 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp" />
-    <ClCompile Include="sphere.cpp" />
+    <ClInclude Include="Light.h" />
+    <ClInclude Include="Sphere.h" />
+    <ClInclude Include="Teapot.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="sphere.h" />
+    <ClCompile Include="Light.cpp" />
+    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Sphere.cpp" />
+    <ClCompile Include="Teapot.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
