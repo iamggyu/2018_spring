@@ -79,11 +79,11 @@ int Queue<T>::getCapacity() const {
 template <class T>
 void Queue<T>::push(const T& x) {
 	// TODO
-	if (capacity == size) {
+	if (capacity == size + 1) {
 		capacity *= 2;
 		int *newArray = new int[capacity];
-		for (int i = 0; i < size; i++) 
-			newArray[i + 1] = array[(front + 1 + i) % size];
+		for (int i = 0; i <= size; i++) 
+			newArray[i + 1] = array[(front + 1 + i) % (size  + 1)];
 		delete[] array;
 		array = newArray;
 		front = 0;
