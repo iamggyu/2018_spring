@@ -50,15 +50,15 @@ public:
 template <class T>
 Stack<T>::Stack() {
 	// TODO
-	top = null;
+	top = NULL;
 	size = 0;
 }
 
 template <class T>
 Stack<T>::~Stack() {
 	// TODO
-	while (top != null) {
-		node* temp = top->next;
+	while (top != NULL) {
+		Node* temp = top->getNext();
 		delete top;
 		top = temp;
 	}
@@ -73,7 +73,9 @@ bool Stack<T>::isEmpty() const {
 template <class T>
 T Stack<T>::getTop() const {
 	// TODO
-	return (*top);
+	if (top != NULL)
+		return top->getData();
+	return T();
 }
 
 template <class T>
@@ -85,29 +87,36 @@ int Stack<T>::getSize() const {
 template <class T>
 void Stack<T>::push(const T& newData) {
 	// TODO
-	node* newNode(newData);
-	newNode->next = top;
+	Node* newNode = new Node(newData, top);
 	top = newNode;
+	size++;
 }
 
 template <class T>
 T Stack<T>::pop() {
 	// TODO
-	T data = top->data;
-	node* delNode = top;
-	top = top->next;
+	T data = top->getData();
+	Node* delNode = top;
+	top = top->getNext();
 	delete delNode;
+	size--;
 	return data;
 }
 
 template <class T>
 void Stack<T>::print() const {
 	// TODO
-	node* curr = top;
-	while (curr != NULL) {
-		cout << curr->data << ' ';
-		curr = curr->next;
+	Node* curr = top;
+	cout << '[';
+	if (curr != NULL) {
+		cout << curr->getData();
+		curr = curr->getNext();
 	}
+	while (curr != NULL) {
+		cout << ", " << curr->getData();
+		curr = curr->getNext();
+	}
+	cout << ']' << endl;
 }
 
 #endif
