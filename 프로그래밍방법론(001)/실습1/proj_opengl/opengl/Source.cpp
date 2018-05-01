@@ -1,38 +1,52 @@
 /* Implement: Include header files */
-
 #include <vector>
-#include "Sphere.h"
-#include "Teapot.h"
-#include "Light.h"
+#include "GL\glut.h"
+#include "Shape.h"
+#include "Square.h"
+#include "Triangle.h"
 
 using namespace std;
 
 #define WIDTH 600		// window's width
 #define HEIGHT 600		// window's height
 
-Sphere sphere(0, 0, 5, 3);
-Teapot teapot(5, 0, -5, 4);
-vector<Light> lights;
-float angle = 0;
+vector<Shape*> shape;
+float speed = 0.01;
+
+void draw_string(void * font, const char * str, float x, float y) {
+	glColor3f(1, 1, 1);
+	glRasterPos2f(x, y);
+	for (int i = 0; i < strlen(str); i++)
+		glutBitmapCharacter(font, str[i]);
+}
 
 void init() {
-	glEnable(GL_LIGHTING);
-	glEnable(GL_DEPTH_TEST);
+	/* Implement: Set each object */
+	shape.push_back(new Triangle(0.2));
+	shape.push_back(new Square(0.3));
 	
-	/* Implement: Set light properties */
-	lights.push_back(Light(0, 100, 100, 0));
-	lights.push_back(Light(200, 0, 0, 1));
-	lights[0].setAmbient(0.1, 0.1, 0.1, 1.0);
-	lights[0].setDiffuse(0.3, 0.3, 0.3, 1.0);
-	lights[0].setSpecular(1.0, 1.0, 1.0, 1.0);
-	lights[1].setAmbient(0.5, 0.5, 0.5, 1.0);
-	lights[1].setDiffuse(0.5, 0.5, 0.5, 1.0);
-	lights[1].setSpecular(1.0, 1.0, 1.0, 1.0);
+	shape[0]->setColor(1, 0, 0);
+	shape[0]->setPos(-0.5, -0.5);
+	shape[1]->setColor(0, 1, 0);
+	shape[1]->setPos(0.5, 0.5);
 }
 
 void idle() {
-	/* Implement: Change the rotation angle */
-	angle += 0.5;
+	/* Implement: Move each object */
+	for (vector<Shape*>::iterator it = shape.begin(); it != shape.end(); it++) {
+		float x = (*it)->getX();
+		float y = (*it)->getY();
+		if (x == -0.5 && y == -0.5) { x += speed; x = (x > 0.5 ? 0.5 : x); }
+		else if (x ==  0.5 && y == -0.5) { y += speed; y = (y > 0.5 ? 0.5 : y); }
+		else if (x == -0.5 && y ==  0.5) { y -= speed; y = (y < -0.5 ? -0.5 : y); }
+		else if (x ==  0.5 && y ==  0.5) { x -= speed; x = (x < -0.5 ? -0.5 : x); }
+
+		else if (x ==  0.5) { y += speed; y = (y > 0.5 ? 0.5 : y); }
+		else if (x == -0.5) { y -= speed; y = (y < -0.5 ? -0.5 : y); }
+		else if (y ==  0.5) { x -= speed; x = (x < -0.5 ? -0.5 : x); }
+		else if (y == -0.5) { x += speed; x = (x > 0.5 ? 0.5 : x); }
+		(*it)->setPos(x, y);
+	}
 	glutPostRedisplay();
 }
 
@@ -40,38 +54,23 @@ void renderScene() {
 	// Clear Color and Depth Buffers
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-	// Use the Projection Matrix
-	glMatrixMode(GL_PROJECTION);
-	glLoadIdentity();
-	// Set the correct perspective.
-	gluPerspective(45.0f, 1.0f, 0.1f, 100.0f);
+	/* Implement: Draw each object */
+	for (vector<Shape*>::iterator it = shape.begin(); it < shape.end(); it++)
+		(*it)->draw();
 
-	// Reset transformations
-	glMatrixMode(GL_MODELVIEW);
-	glLoadIdentity();
-	// Set the camera
-	gluLookAt(25.0f, 25.0f, 25.0f,
-		0.0f, 0.0f, 0.0f,
-		0.0f, 1.0f, 0.0f);
-
-	/* Implement: draw each object */
-	lights[0].draw();
-	sphere.draw();
-	teapot.draw();
-	glRotatef(angle, 0.0f, 1.0f, 0.0f);
-	lights[1].draw();
+	/* Implement: Display character*/
+	draw_string(GLUT_BITMAP_TIMES_ROMAN_24, "2017-17497 KIM Hyeongyu", -0.5, 0.9);
 
 	glutSwapBuffers();
 }
 
 void main(int argc, char **argv) {
-	
 	// init GLUT and create Window
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DEPTH | GLUT_DOUBLE | GLUT_RGBA);
 	glutInitWindowPosition(650, 300);
 	glutInitWindowSize(WIDTH, HEIGHT);
-	glutCreateWindow("Drawing pearl sphere & ruby teapot");
+	glutCreateWindow("Drawing Square & Equilateral Triangle");
 	init();
 
 	// register callbacks
