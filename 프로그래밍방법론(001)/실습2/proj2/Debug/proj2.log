@@ -1,0 +1,3 @@
+﻿  code.cpp
+f:\2018_spring\프로그래밍방법론(001)\실습2\proj2\code.cpp(87): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  proj2.vcxproj -> F:\2018_spring\프로그래밍방법론(001)\실습2\proj2\Debug\proj2.exe
