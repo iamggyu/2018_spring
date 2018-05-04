@@ -1,0 +1,1 @@
+/* Implement: Define each function of Color class */

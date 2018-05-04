@@ -19,15 +19,15 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Shape.h" />
+    <ClInclude Include="Color.h" />
+    <ClInclude Include="Quad.h" />
     <ClInclude Include="Square.h" />
-    <ClInclude Include="Triangle.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Shape.cpp" />
+    <ClCompile Include="Color.cpp" />
+    <ClCompile Include="Quad.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Square.cpp" />
-    <ClCompile Include="Triangle.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
