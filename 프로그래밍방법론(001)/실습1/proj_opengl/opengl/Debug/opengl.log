@@ -1,4 +1,8 @@
-﻿  Source.cpp
-f:\2018_spring\프로그래밍방법론(001)\실습1\proj_opengl\opengl\source.cpp(19): warning C4018: '<': signed/unsigned mismatch
-f:\2018_spring\프로그래밍방법론(001)\실습1\proj_opengl\opengl\source.cpp(67): warning C4326: return type of 'main' should be 'int' instead of 'void'
+﻿  Player.cpp
+f:\2018_spring\프로그래밍방법론(001)\실습1\proj_opengl\opengl\player.cpp(43): warning C4018: '<': signed/unsigned mismatch
+  Source.cpp
+f:\2018_spring\프로그래밍방법론(001)\실습1\proj_opengl\opengl\source.cpp(44): warning C4018: '<': signed/unsigned mismatch
+f:\2018_spring\프로그래밍방법론(001)\실습1\proj_opengl\opengl\source.cpp(97): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Zombie.cpp
+  Generating Code...
   opengl.vcxproj -> F:\2018_spring\프로그래밍방법론(001)\실습1\proj_opengl\opengl\Debug\opengl.exe
