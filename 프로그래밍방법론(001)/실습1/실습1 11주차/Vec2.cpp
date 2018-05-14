@@ -1,0 +1,1 @@
+/* Implement: Define each function of Vec2 class */
