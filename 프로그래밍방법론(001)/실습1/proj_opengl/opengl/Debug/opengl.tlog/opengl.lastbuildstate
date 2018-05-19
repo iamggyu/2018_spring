@@ -1,6 +1,2 @@
 #TargetFrameworkVersion=v4.0:PlatformToolSet=v141:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=10.0.16299.0
-<<<<<<< HEAD
 Debug|Win32|E:\2018_spring\프로그래밍방법론(001)\실습1\proj_opengl\opengl\|
-=======
-Debug|Win32|F:\2018_spring\프로그래밍방법론(001)\실습1\proj_opengl\opengl\|
->>>>>>> 0b621d251fee603fd6c43b8bba481c3b5bcbafd4

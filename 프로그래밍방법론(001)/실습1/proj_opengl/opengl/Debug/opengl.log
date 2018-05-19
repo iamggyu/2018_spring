@@ -1,14 +1,6 @@
-﻿  Source.cpp
-<<<<<<< HEAD
-e:\2018_spring\프로그래밍방법론(001)\실습1\proj_opengl\opengl\source.cpp(64): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
-  Vec2.cpp
-  코드를 생성하고 있습니다...
-e:\2018_spring\프로그래밍방법론(001)\실습1\proj_opengl\opengl\vec2.cpp(32): warning C4715: 'Vec2::operator[]': 모든 제어 경로에서 값을 반환하지는 않습니다.
+﻿  source.cpp
+e:\2018_spring\프로그래밍방법론(001)\실습1\proj_opengl\opengl\source.cpp(57): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+e:\2018_spring\프로그래밍방법론(001)\실습1\proj_opengl\opengl\source.cpp(59): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+e:\2018_spring\프로그래밍방법론(001)\실습1\proj_opengl\opengl\source.cpp(61): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+e:\2018_spring\프로그래밍방법론(001)\실습1\proj_opengl\opengl\source.cpp(66): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
   opengl.vcxproj -> E:\2018_spring\프로그래밍방법론(001)\실습1\proj_opengl\opengl\Debug\opengl.exe
-=======
-f:\2018_spring\프로그래밍방법론(001)\실습1\proj_opengl\opengl\source.cpp(48): warning C4018: '<': signed/unsigned mismatch
-f:\2018_spring\프로그래밍방법론(001)\실습1\proj_opengl\opengl\source.cpp(50): warning C4018: '<': signed/unsigned mismatch
-f:\2018_spring\프로그래밍방법론(001)\실습1\proj_opengl\opengl\source.cpp(52): warning C4018: '<': signed/unsigned mismatch
-f:\2018_spring\프로그래밍방법론(001)\실습1\proj_opengl\opengl\source.cpp(64): warning C4326: return type of 'main' should be 'int' instead of 'void'
-  opengl.vcxproj -> F:\2018_spring\프로그래밍방법론(001)\실습1\proj_opengl\opengl\Debug\opengl.exe
->>>>>>> 0b621d251fee603fd6c43b8bba481c3b5bcbafd4
