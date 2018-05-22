@@ -35,5 +35,6 @@ int main() {
 	dict->levelorder(); cout << endl;
 	dict->remove(20);
 	cout << dict->getHeight() << endl;
-	dict->levelorder(); cout << endl;
+	dict->levelorder(); cout << endl; 
+	system("pause");	
 }

@@ -35,8 +35,9 @@ int AVL::BF(TreeNode* curr_node) {
 	// TODO : Return the balance factor of curr_node
 	// BF = The height of left child node of curr_node - The height of right child node of curr_node
 	if (curr_node == nullptr) return 0;
-	return BF(curr_node->left) - BF(curr_node->right);
+	return getLevelFromLeaf(curr_node->left) - getLevelFromLeaf(curr_node->right);
 }
+
 
 void AVL::insert(TreeNode*& curr_node, const int& key, const double& data) {
 	// TODO : Insert new node in AVL tree
@@ -65,14 +66,25 @@ void AVL::insert(TreeNode*& curr_node, const int& key, const double& data) {
 
 void AVL::rotateSingle(TreeNode*& curr_node) {
 	// TODO : Implement a rotateSingle function
-	TreeNode* newCurr = curr_node->right;
-	curr_node->right = newCurr->left;
-	newCurr->left = curr_node;
-	curr_node = newCurr;
+	if (BF(curr_node) < 0) {
+		TreeNode* newCurr = curr_node->right;
+		curr_node->right = newCurr->left;
+		newCurr->left = curr_node;
+		curr_node = newCurr;
+	}
+	else {
+		TreeNode* newCurr = curr_node->left;
+		curr_node->left = newCurr->right;
+		newCurr->right = curr_node;
+		curr_node = newCurr;
+	}
 }
 
 void AVL::rotateDouble(TreeNode*& curr_node) {
 	// TODO : Implement a rotateDouble function
+	if (BF(curr_node) < 0) rotateSingle(curr_node->right);
+	else rotateSingle(curr_node->left);
+	rotateSingle(curr_node);
 }
 
 void AVL::remove(TreeNode*& curr_node, const int& key) {
