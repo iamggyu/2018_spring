@@ -115,7 +115,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="HW2_Queue.h" />
     <ClInclude Include="HW3_AVL.h" />
+    <ClInclude Include="HW3_BST.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="HW3_Main_AVL.cpp" />

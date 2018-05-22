@@ -18,6 +18,12 @@
     <ClInclude Include="HW3_AVL.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="HW3_BST.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="HW2_Queue.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="HW3_Main_AVL.cpp">
