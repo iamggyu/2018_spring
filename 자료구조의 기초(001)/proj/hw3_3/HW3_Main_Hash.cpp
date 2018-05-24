@@ -39,4 +39,5 @@ int main() {
 	cout << "Value : " << map->search(21) << endl;
 
 	return 0;
+	system("pause");
 }
